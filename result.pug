@@ -1,0 +1,72 @@
+doctype html
+html(lang='en')
+  head
+    title upgrade report
+    style.
+      tr {
+      height: 30px;
+      text-align: left;
+      }
+      tr:nth-child(2n) {
+      background-color: #f7f7f7;
+      }
+      table {
+      text-align: center;
+      font-size: 10pt;
+      font-family: tahoma;
+      font-weight: bold;
+      }
+      thead tr {
+      background: #b9b9b9;
+      height: 30px;
+      text-align: center;
+      }
+      .dependency{
+        clear : left;
+      }
+      .dependency .version {
+      float: left;
+      clear: left;
+      margin-left: 25px;
+      }
+      .dependency .name {
+      margin-right: 20px;
+      clear: right;
+      float: left;
+      }
+      .version.removed {
+      color: red;
+      }
+      .version .title,.version .on {
+      color: green;
+      }
+  body
+    h1 upgrade report
+    #container.col
+      table
+        thead
+          tr
+            td
+            td Module
+            td Dependencies
+            td usages
+        tbody
+        each val in table
+          tr
+            td 
+            td #{val.Module}(#{val.Version})
+            td
+              each val2 in val.Dependencies
+                div.dependency 
+                  span.name #{val2.Module}(#{val2.Version}) 
+                  each version in val2.AvailableVersions
+                      if version.depend === 'none'
+                        span.version.removed #{val.Module}-#{version.version}
+                      else
+                        span.version 
+                          span.title #{val.Module}-#{version.version}
+                          span  on 
+                          span.on #{val2.Module}-#{version.depend}(#{version.match})
+            td
+              each val2 in val.Usages
+                div #{val2}

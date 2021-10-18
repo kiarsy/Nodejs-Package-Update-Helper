@@ -1,0 +1,21 @@
+{
+  "name": "nodejs-package-updater",
+  "version": "1.0.0",
+  "description": "A Package to check and update all dependencies from a guide file.",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "Hossein Kiarsy Pour",
+  "license": "ISC",
+  "type": "module",
+  "dependencies": {
+    "after-load": "^1.0.4",
+    "httpntlm": "^1.7.7",
+    "jetty": "^0.2.1",
+    "prompt": "^1.2.0",
+    "pug": "^3.0.2",
+    "sync-request": "^6.1.0",
+    "yargs": "^17.2.1"
+  }
+}
