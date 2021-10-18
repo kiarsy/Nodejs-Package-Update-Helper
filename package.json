@@ -9,6 +9,10 @@
   "author": "Hossein Kiarsy Pour",
   "license": "ISC",
   "type": "module",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/kiarsy/Nodejs-Package-Update-Helper.git"
+  },
   "dependencies": {
     "after-load": "^1.0.4",
     "httpntlm": "^1.7.7",
