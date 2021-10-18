@@ -1,6 +1,6 @@
 {
   "name": "nodejs-package-updater",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "description": "A Package to check and update all dependencies from a guide file.",
   "main": "index.js",
   "scripts": {
