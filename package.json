@@ -14,12 +14,7 @@
     "url": "https://github.com/kiarsy/Nodejs-Package-Update-Helper.git"
   },
   "dependencies": {
-    "after-load": "^1.0.4",
-    "httpntlm": "^1.7.7",
-    "jetty": "^0.2.1",
-    "prompt": "^1.2.0",
     "pug": "^3.0.2",
-    "sync-request": "^6.1.0",
     "yargs": "^17.2.1"
   }
 }
